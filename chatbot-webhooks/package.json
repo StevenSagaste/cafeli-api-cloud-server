@@ -1,0 +1,23 @@
+{
+  "name": "chatbot-webhooks",
+  "version": "1.0.0",
+  "description": "node webhook to conect with whatsapp apii",
+  "main": "index.js",
+  "scripts": {
+    "test": "cafeli-webhook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenSagaste/cafeli-api-cloud-server.git"
+  },
+  "keywords": [
+    "api",
+    "cloud"
+  ],
+  "author": "Steven Sagaste",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StevenSagaste/cafeli-api-cloud-server/issues"
+  },
+  "homepage": "https://github.com/StevenSagaste/cafeli-api-cloud-server#readme"
+}
