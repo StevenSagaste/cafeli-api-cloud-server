@@ -2,9 +2,9 @@
   "name": "chatbot-webhooks",
   "version": "1.0.0",
   "description": "node webhook to conect with whatsapp apii",
-  "main": "index.js",
+  "main": "chatbot-webhooks/index.js",
   "scripts": {
-    "test": "cafeli-webhook"
+    "test": "node chatbot-webhooks/index.js"
   },
   "repository": {
     "type": "git",
