@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/StevenSagaste/cafeli-api-cloud-server/issues"
   },
-  "homepage": "https://github.com/StevenSagaste/cafeli-api-cloud-server#readme"
+  "homepage": "https://github.com/StevenSagaste/cafeli-api-cloud-server#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
