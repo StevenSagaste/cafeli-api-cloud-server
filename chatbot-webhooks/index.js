@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const app = express().use(bodyParser.json()); // creates http server
-const token = 'VERIFICATION_TOKEN';;
+const token = 'VERIFICATION_TOKEN';
 const PORT = process.env.PORT || 3030;
 
 // your code
