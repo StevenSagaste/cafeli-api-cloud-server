@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
     return res.end(req.query.challenge);
 });
 
-app.post('/', (req, res) => {
+app.post('/msg', (req, res) => {
     // check if verification token is correct
     if (req.query.token !== token) {
         return res.sendStatus(401);
