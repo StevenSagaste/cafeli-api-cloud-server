@@ -1,9 +1,15 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const axios = require("axios");
+require('dotenv').config();
+
+
 const app = express().use(bodyParser.json()); // creates http server
 //const token = 'VERIFICATION_TOKEN';
 const PORT = process.env.PORT || 3030;
+
+const token = process.env.token;
+const mytoken = process.env.mytoken;
 
 // your code
 app.get('/webhook', (req, res) => {
@@ -12,10 +18,10 @@ app.get('/webhook', (req, res) => {
     let mode=req.query['hub.mode']
     let challenge=req.query['hub.challenge']
     let verify_token=req.query['hub.verify_token']
-    let token=req.query['hub.verify_token']
+    //let token=req.query['hub.verify_token']
     
     if (mode && token) {
-        if (mode === 'subscribed' && verify_token === token) {
+        if (mode === 'subscribed' && verify_token === mytoken) {
             res.status(200).send(challenge);
         } else {
             
